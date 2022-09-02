@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Buổi 5</title>
+
+    <!-- lin fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link gg font hind -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- link boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- link animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container" id="bt1">
+    <!-- Bài 1 -->
+    <h3>Bài tập 1|</h3>
+    <div class="row">
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtHoTen" type="text" class="form-control" placeholder="Nhập họ tên">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+          <input id="txtThuNhap" type="number" class="form-control" placeholder="Tổng thu nhập">
+          </div>
+          <div class="input-group mb-3 col-lg-3">
+            <input id="txtSoNguoiPT" type="number" class="form-control" placeholder="Số người phụ thuộc">
+        </div>
+    </div>
+    <div class="input-group mb-3 col-lg-6">
+      <button id="btnTinhTienThue" type="button" class="btn btn-secondary">Tính tiền thuế</button>
+    </div>
+    <div class="input-group mb-3 col-lg-6">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hand-point-right"></i></span>
+      </div>
+      <input id="txtThue" type="text" class="form-control" aria-describedby="basic-addon1">
+    </div>
+    <!-- End bài 1 -->
+  </div>
+  <hr>
+  <div class="container" id="bt2">
+    <!-- Bài 2 -->
+    <h3>Bài tập 2|</h3>
+    <div class="row">
+      <select class="mb-3 col-lg-3" id="slLoai">
+        <option selected value="-">Chọn loại khách hàng</option>
+        <option value="1">Nhà dân</option>
+        <option value="2">Doanh Nghiệp</option>
+      </select>
+      <div class="input-group mb-3 col-lg-3">
+        <input id="txtMaKH" type="text" class="form-control" placeholder="Nhập mã khách hàng">
+        </div>
+      <div class="input-group mb-3 col-lg-3">
+      <input id="txtSoKenhCC" type="number" class="form-control" placeholder="Số kênh cao cấp">
+      </div>
+      <div class="input-group mb-3 col-lg-3">
+        <input id="txtSoKetNoi" type="number" class="form-control" placeholder="Số kết nối">
+        </div>
+    </div>
+    <div class="input-group mb-3 col-lg-6">
+      <button id="btnTinhTienCap" type="button" class="btn btn-secondary">Tính tiền cáp</button>
+    </div>
+    <div class="input-group mb-3 col-lg-6">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hand-point-right"></i></span>
+      </div>
+      <input id="txtTienCap" type="text" class="form-control" aria-describedby="basic-addon1">
+    </div>
+    <!-- End bài 2 -->
+  </div>
+  
+
+    <!-- link jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- link popper -->
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <!-- link bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+    <script src="./js/main.js"></script>
+</body>
+</html>
