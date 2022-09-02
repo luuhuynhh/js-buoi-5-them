@@ -47,6 +47,7 @@ btnTinhTienThue.onclick = function () {
     var thuNhap = Number(txtThuNhap.value);
     var soNguoiPT = Number(txtSoNguoiPT.value);
     //Xử lý:
+    //Tính tiền thuế dựa vào mức thu nhập và số người phụ thuộc (hàm tinhThue)
     var thue = tinhThue(thuNhap, soNguoiPT);
     var res = "Họ tên: " + hoTen + "; Thuế: " + new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(thue);
     //Đầu ra:
@@ -107,6 +108,7 @@ btnTinhTienCap.onclick = function () {
     var soKenhCC = Number(txtSoKenhCC.value);
     var soKetNoi = Number(txtSoKetNoi.value);
     //Xử lý:
+    //Tính tiền cáp dựa vào loại khách (Nhà dân, Doanh nghiệp), số kênh cao cấp và số kết nối
     var tien = tienCap(loai, soKenhCC, soKetNoi);
     var res = "Họ tên: " + maKH + "; Tiền cáp: " + new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(tien);
     //Đầu ra: Hiển thị kết quả
